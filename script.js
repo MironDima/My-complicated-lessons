@@ -10,23 +10,23 @@
 //  const twoNum = number.toString().slice(0,2)  
 //  console.log(twoNum)  //21  
 
-// numbers.forEach(index => {
-// 	console.log( mult *= index)	//??
-// });
 //Создать переменную num со значением 266219 (тип данных число)
 const num = 266219;
 let str = num.toString();
+
 console.log(typeof str);
 let numbers = str.split('')
 //Вывести в консоль произведение (умножение) цифр этого числа
-let mult = 1;
-for (let i = 0; i < numbers.length; i++) {
-	mult *= numbers[i]
-}
-console.log(mult);
+
+const multyply = numbers.reduce((mult,index) => {
+	return mult * index;
+})
+console.log(multyply);
+
 //Полученный результат возвести в степень 3
-mult = mult **3
-console.log(mult);
+ const level = multyply **3
+  console.log(level);
+
 //Вывести в консоль первые 2 цифры полученного числа
-const twoNum = mult.toString().slice(0,2)
+const twoNum = level.toString().slice(0,2)
 console.log(twoNum);
