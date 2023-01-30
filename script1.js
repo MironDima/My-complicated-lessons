@@ -19,9 +19,24 @@ switch(true) {
 		console.log('Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота');
 		break;
 		case lang === "en":
-			console.log('Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота');
+			console.log('Sunday','Monday ','Tuesday ','Wednesday ','Thursday ','Friday ','Saturday ');
 			break;	
 			default:
 				console.log('Не верно')
 }
 // c) через многомерный массив 
+
+let language ={ 
+	'ru':['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
+ 	'en':['Sunday','Monday ','Tuesday ','Wednesday ','Thursday ','Friday ','Saturday ']
+	}
+	console.log(language.en);
+	
+//Решить задачу с помощью нескольких тернарных операторов
+
+let namePerson = 'Александр'
+
+ namePerson === 'Артем' ? console.log('директор') : namePerson === 'Александр' ? console.log('преподаватель') :   console.log('cтудент')
+ 
+
+ 
