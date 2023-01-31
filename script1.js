@@ -3,11 +3,11 @@ let lang = 'en'
 
 // c) через многомерный массив 
 
-let language =[
-	['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
+let language = [
+	 ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
  	['Sunday','Monday ','Tuesday ','Wednesday ','Thursday ','Friday ','Saturday ']
 ]
-	console.log(language[0]);
+	console.log(language[1]);
 
 
 //a) через if
