@@ -3,19 +3,19 @@ let lang = 'en'
 
 // c) через многомерный массив 
 
-let language ={ 
-	'ru':['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
- 	'en':['Sunday','Monday ','Tuesday ','Wednesday ','Thursday ','Friday ','Saturday ']
-	}
-	console.log(language['en']);
+let language =[
+	['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
+ 	['Sunday','Monday ','Tuesday ','Wednesday ','Thursday ','Friday ','Saturday ']
+]
+	console.log(language[0]);
 
 
 //a) через if
 if(lang === "ru") {
-	console.log(language['ru']);
+	console.log(language[0]);
 }
 if( lang === 'en') {
-	console.log(language['en']);
+	console.log(language[1]);
 }
 else{
 	console.log('Не верно')
@@ -25,10 +25,10 @@ else{
 
 switch(true) {
 	case lang === "ru":
-		console.log(language['ru']);
+		console.log(language[0]);
 		break;
 		case lang === "en":
-			console.log(language['en']);
+			console.log(language[1]);
 			
 			break;	
 			default:
