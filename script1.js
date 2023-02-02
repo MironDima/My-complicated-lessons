@@ -1,21 +1,21 @@
 //Переменная lang может принимать 2 значения: 'ru' 'en'.
-let lang = 'en'
+let lang = 'ru'
 
 // c) через многомерный массив 
 
-let language = [
-	 ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
- 	['Sunday','Monday ','Tuesday ','Wednesday ','Thursday ','Friday ','Saturday ']
-]
-	console.log(language[1]);
+let language = {
+	'ru': ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
+	'en':['Sunday','Monday ','Tuesday ','Wednesday ','Thursday ','Friday ','Saturday ']
+}
+	console.log(language.ru);
 
 
 //a) через if
 if(lang === "ru") {
-	console.log(language[0]);
+	console.log(language.ru);
 }
 if( lang === 'en') {
-	console.log(language[1]);
+	console.log(language.en);
 }
 else{
 	console.log('Не верно')
@@ -25,10 +25,10 @@ else{
 
 switch(true) {
 	case lang === "ru":
-		console.log(language[0]);
+		console.log(language.ru);
 		break;
 		case lang === "en":
-			console.log(language[1]);
+			console.log(language.en);
 			
 			break;	
 			default:
