@@ -5,16 +5,14 @@ let date = new Date()
 
 function formatDate(date){
 	let year = date.getFullYear()
-	let month = date.getMonth() //0-11
-	let monthTitle = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря']
+	let month = date.toLocaleDateString('ru-RU',{month: 'long'})
 	let day = date.getDate()
 
-	let weekday = date.getDay() //день недели 0-6
-	let weekdayTitle = ["воскресенье","понедельник","вторник","среда","четверг","пятница","суббота"]
+	let weekday = date.toLocaleDateString('ru-RU',{weekday: 'long'})
 	let minute = date.getMinutes()
 	let second = date.getSeconds()
 	let hour = date.getHours()
-		function formateHour(hour){
+		function formateHour(hour){git
 			if(hour >= 5 && hour <=20){
 				return 'часов'
 			}
@@ -25,7 +23,7 @@ function formatDate(date){
 				return 'час'
 			}
 		}
-	return `Сегодня ${weekdayTitle[weekday]}, ${day} ${monthTitle[month]} ${year} года, ${hour} ${formateHour(hour)} ${minute} минут ${second} секунды `
+	return `Сегодня ${weekday}, ${day} ${month} ${year} года, ${hour} ${formateHour(hour)} ${minute} минут ${second} секунды `
 }
 formatDate(date)
 
