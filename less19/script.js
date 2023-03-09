@@ -6,15 +6,15 @@ const debounce = (func, time) => {
 	let timeout
 
 	return () => {
-		clearInterval(timeout)
-		timeout = setTimeout(func, time)
+		clearInterval(timeout)    //очищщение таймера
+		timeout = setTimeout(func, time)  //рекурсия передача параметров
 	}
 }
 
 const logger = () => {
-	 paragraph.textContent = input.value
+	paragraph.textContent = input.value
 	input.value = ''
 	return
 }
 
-input.addEventListener('input',debounce(logger, 300))
+input.addEventListener('input', debounce(logger, 300))
